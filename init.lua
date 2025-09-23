@@ -2,7 +2,7 @@
 vim.o.number = true
 vim.o.cursorline = true
 vim.g.mapleader = " "
-vim.g.maplocalleader = "\\"
+vim.g.maplocalleader = " "
 vim.o.tabstop = 4
 vim.o.shiftwidth = 4
 
@@ -77,7 +77,7 @@ require("lazy").setup({
 			lazy = false,
 			build = ":TSUpdate",
 			opts = {
-				ensure_installed = { "lua", "javascript", "typescript", "css", "json" },
+				ensure_installed = { "c", "lua", "javascript", "typescript", "css", "json" },
 				auto_install = true,
 				highlight = {
 					enable = true,
@@ -91,6 +91,7 @@ require("lazy").setup({
 					lua = { "stylua" },
 					typescript = { "prettier" },
 					typescriptreact = { "prettier" },
+					c = { "clang-format" },
 				},
 			},
 			init = function()

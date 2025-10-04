@@ -85,6 +85,11 @@ require("lazy").setup({
 			},
 		},
 		{
+			"windwp/nvim-autopairs",
+			event = "InsertEnter",
+			config = true,
+		},
+		{
 			"stevearc/conform.nvim",
 			opts = {
 				formatters_by_ft = {

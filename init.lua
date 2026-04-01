@@ -1,0 +1,7 @@
+require("options")
+require("colorscheme")
+require("diagnostics")
+require("lsp")
+require("search")
+require("coding")
+require("goodies")

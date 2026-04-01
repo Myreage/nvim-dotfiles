@@ -1,10 +1,3 @@
-# Mes besoins
+# nvim-dotfiles
 
-- Coloration syntaxique
-- Auto-indent
-- Auto-pairs
-- Auto-complete
-- LSP diagnostics
-- Auto-format
-- Finder
-
+Minimalist 0.12 config

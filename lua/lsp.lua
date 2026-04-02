@@ -15,10 +15,14 @@ vim.lsp.enable({ 'lua_ls', 'rust_analyzer' })
 
 
 -- Show popup on auto-complete, even if only one element, don't auto insert
-vim.cmd [[set completeopt+=menuone,popup,noinsert]]
+vim.opt.completeopt:append({ 'menuone', 'popup', 'noinsert' })
 
 -- Remap ENTER to CTRL+Y when the completion popup menu is open (to accept completion with ENTER instead of CTRL+Y)
-vim.cmd [[inoremap <expr> <cr> pumvisible() ? '<c-y>' : '<cr>']]
+vim.keymap.set('i', '<cr>', function()
+	return vim.fn.pumvisible() == 1 and '<c-y>' or '<cr>'
+end, { expr = true }
+)
+
 
 -- On LSP Attach
 vim.api.nvim_create_autocmd('LspAttach', {

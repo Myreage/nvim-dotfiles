@@ -11,7 +11,7 @@ vim.lsp.config('lua_ls', {
 
   }
 })
-vim.lsp.enable({ 'lua_ls', 'rust_analyzer', 'html', 'cssls' })
+vim.lsp.enable({ 'lua_ls', 'rust_analyzer', 'html', 'cssls', 'ts_ls' })
 
 
 -- Show popup on auto-complete, even if only one element, don't auto insert
